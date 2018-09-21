@@ -204,10 +204,10 @@ def mergedfs(dfs):
 	return result
 
 if __name__ == '__main__':
-	path = '/media/mirko/OS/Users/Mirko/Desktop/thymio/turtle/'
+	path = '/path/to/the/bagfiles'
 	thymio = '21'
-	# distances = [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 24, 26, 28, 30, 47, 64, 80, 100]
-	distances = list(range(0, 65, 1))
+	
+	distances = list(range(0, 31, 1))
 
 	res = preprocess(path, thymio, np.array(distances, dtype=np.float))
 	print('Finished')
