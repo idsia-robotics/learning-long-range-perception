@@ -8,6 +8,7 @@ We instantiate and implement the approach on a small mobile robot to detect obst
 We quantitatively evaluate the quality of the predictions on unseen scenarios, qualitatively evaluate robustness to different operating conditions, and demonstrate usage as the sole input of an obstacle-avoidance controller.
 
 ![Predictions](https://github.com/Mirko-Nava/Learning-Long-range-Perception/blob/master/img/predictions.png "Predictions")
+*Prediction of a model trained with the proposed approach applied on a camera mounted on a Mighty Thymio **(a)**, on a TurtleBot **(b)** and on the belt of a person **(c)**.*
 
 ### Videos
 
