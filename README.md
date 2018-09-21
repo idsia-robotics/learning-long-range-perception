@@ -11,7 +11,8 @@ We quantitatively evaluate the quality of the predictions on unseen scenarios, q
 
 ### Videos
 
-Sample videos of the model's prediction, the camera's view and the target labels for the different scenarios are available [here](https://github.com/Mirko-Nava/Learning-Long-range-Perception/tree/master/video).
+Sample videos of the obstacle avoidance model's prediction, the camera's view and the target labels for the different scenarios are available [here](https://github.com/Mirko-Nava/Learning-Long-range-Perception/tree/master/video).
+An overview of different models created with the proposed approach is available [here](www.google.com).
 
 ### Dataset
 
