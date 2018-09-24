@@ -12,8 +12,7 @@ We quantitatively evaluate the quality of the predictions on unseen scenarios, q
 
 ### Videos
 
-All the video material is available at this [link](https://github.com/Mirko-Nava/Learning-Long-range-Perception/tree/master/video).
-Sample videos of the model's prediction on different scenarios, robots and systems are available.
+All the video material of models trained with the proposed approach on different scenarios, robots and systems are available [here](https://github.com/Mirko-Nava/Learning-Long-range-Perception/tree/master/video).
 
 ### Dataset
 
