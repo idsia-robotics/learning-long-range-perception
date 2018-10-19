@@ -9,6 +9,8 @@ we assume that the former is directly related to some piece of information to be
 We instantiate and implement the approach on a small mobile robot to detect obstacles at various distances using the video stream of the robot's forward-pointing camera, by training a convolutional neural network on automatically-acquired datasets.
 We quantitatively evaluate the quality of the predictions on unseen scenarios, qualitatively evaluate robustness to different operating conditions, and demonstrate usage as the sole input of an obstacle-avoidance controller.
 
+ The e-print of the article is available at this link [arXiv:1809.07207](https://arxiv.org/abs/1809.07207).
+
 ![Predictions](https://github.com/Mirko-Nava/Learning-Long-range-Perception/blob/master/img/predictions.png "Predictions")
 *Prediction of a model trained with the proposed approach applied on a camera mounted on a Mighty Thymio **(a)**, on a TurtleBot **(b)** and on the belt of a person **(c)**.*
 
