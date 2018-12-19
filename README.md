@@ -11,12 +11,12 @@ We quantitatively evaluate the quality of the predictions on unseen scenarios, q
 
  The e-print of the article is available at the following link [arXiv:1809.07207](https://arxiv.org/abs/1809.07207).
 
-![Predictions](https://github.com/Mirko-Nava/Learning-Long-range-Perception/blob/master/img/predictions.png "Predictions")
+![Predictions](https://github.com/idsia-robotics/Learning-Long-range-Perception/blob/master/img/predictions.png "Predictions")
 *Prediction of a model trained with the proposed approach applied on a camera mounted on a Mighty Thymio **(a)**, on a TurtleBot **(b)** and on the belt of a person **(c)**.*
 
 ### Videos
 
-All the video material of models trained with the proposed approach on different scenarios, robots and systems is available [here](https://github.com/Mirko-Nava/Learning-Long-range-Perception/tree/master/video).
+All the video material of models trained with the proposed approach on different scenarios, robots and systems is available [here](https://github.com/idsia-robotics/Learning-Long-range-Perception/tree/master/video).
 
 ### Dataset
 
@@ -25,7 +25,7 @@ It is stored as an HDF5 file containing two groups per recording called respecti
 
 ### Code
 
-The entire codebase is avaliable [here](https://github.com/Mirko-Nava/Learning-Long-range-Perception/tree/master/code).
+The entire codebase is avaliable [here](https://github.com/idsia-robotics/Learning-Long-range-Perception/tree/master/code).
 In order to generate the dataset, of which a download link is present above, one should launch the script preprocess.py which will create the dataset in hdf5 file format, starting from a collection of ROS bagfiles stored in a given folder.
 
 The script train.py is used to train the model, which is defined in unified_model.py, using a given hdf5 dataset. A list of the available parameters can be seen by launching  `python train.py -h `.
