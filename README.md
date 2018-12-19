@@ -16,7 +16,7 @@ The e-print of the article is available at the following link [arXiv:1809.07207]
 
 ![Predictions](https://github.com/idsia-robotics/Learning-Long-range-Perception/blob/master/img/simulation_results.png "Predictions")
 *Simulation setup and results of the proposed approach applied on 3 cameras mounted on a Pioneer 3AT with different rotations.
-**Left & center-left**: robot setup with cameras' views.
+**Left & Center-left**: robot setup with cameras' views.
 **Center-right**: number of extracted known labels from 70min of recording.
 **Right**: achieved AUC score of a model trained from 35min of recording.*
 
