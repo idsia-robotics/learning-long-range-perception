@@ -9,10 +9,8 @@ import h5py
 import rosbag
 import numpy as np
 from next import *
-import pandas as pd
 from settings import *
 from datetime import datetime
-from joblib import Parallel, delayed
 from tf.transformations import euler_from_quaternion
 
 
@@ -79,7 +77,7 @@ def preprocess(path='./', extractors={}, coords=[(0, 0)]):
 
 		dfs = bag2dfs(rosbag.Bag(path + file + '.bag'), extractors)
 
-		df = mergedfs2(dfs)
+		df = mergedfs(dfs)
 
 		target_cols = [col for col in df.columns.values if 'target' in col]
 		input_cols = [col for  col in df.columns.values if col not in target_cols]
@@ -134,61 +132,7 @@ def bag2dfs(bag, extractors):
 
 	return result
 
-# def mergedfs(dfs):
-# 	'''Merges different dataframes into a single synchronized dataframe.
-
-# 	Args:
-# 		dfs: a dictionary of dataframes divided by ros topic.
-
-# 	Returns:
-# 		a single dataframe composed of the various dataframes synchronized.
-# 	'''
-# 	min_topic = None
-# 	start_time = None
-
-# 	for topic, df in dfs.items():
-# 		if not min_topic or len(dfs[min_topic]) > len(df):
-# 			min_topic = topic
-# 		if not start_time or start_time > np.min(df.index.values):
-# 			start_time = np.min(df.index.values)
-
-# 	for _, df in dfs.items():
-# 		if df.index.values[0] > 2 * start_time:
-# 			df.index -= np.min(df.index.values)
-# 		else:
-# 			df.index -= start_time
-
-# 	ref_df = dfs[min_topic]
-# 	topics = dfs.keys()
-# 	topics.remove(min_topic)
-# 	topics = zip([0] * len(topics), topics)
-
-# 	values = Parallel(n_jobs=-1, require='sharedmem')(delayed(internal)(i, ref_df, dfs, topics) for i in tqdm.tqdm(range(0, len(ref_df)), desc='creating dataframe'))
-# 	values = filter(lambda x: x is not None, values)
-
-# 	result = pd.DataFrame.from_dict(values).set_index('timestamp')
-# 	result.index = pd.to_datetime(result.index)
-	
-# 	return result
-
-# def internal(i, ref_df, dfs, topics):
-# 	t = ref_df.index[i]
-# 	row =[{'timestamp': t}, ref_df.loc[t].to_dict()]
-
-# 	for idx, topic in topics:
-# 		df = dfs[topic]
-		
-# 		while idx < len(df) and df.index[idx] < t:
-# 			idx += 1
-		
-# 		if idx >= len(df):
-# 			return None
-
-# 		row.append(df.iloc[idx].to_dict())
-
-# 	return {k: v for d in row for k, v in d.items()}
-
-def mergedfs2(dfs):
+def mergedfs(dfs):
 	'''Merges different dataframes into a single synchronized dataframe.
 
 	Args:
@@ -235,12 +179,6 @@ if __name__ == '__main__':
 		prefix + '/camera_down/image_raw/compressed': lambda m: {
 						'target1': np.mean(jpeg2np(m.data))
 														  },
-		# prefix + '/laser_one/scan': lambda m: {
-		# 					'las1': np.array(m.intensities)
-		# 					},
-		# prefix + '/laser_two/scan': lambda m: {
-		# 					'las2': np.array(m.intensities)
-		# 					},
 		prefix + '/odom': lambda m: {
 							'pos_x': m.pose.pose.position.x,
 							'pos_y': m.pose.pose.position.y,
