@@ -112,6 +112,8 @@ def generator(split_percentage=50.0, filename=None, batch_size=1, augment=True, 
 		filename: a filename for an hdf5 storage.
 		batch_size: the size of the batch.
 		augment: a boolean flag representing wether to augment the data or not.
+		is_testset: a boolean flag representing wether to generate data for the testing or training.
+		testset_index: the index of the hdf5 storage data to be used as testset.
 
 	Returns:
 		the preprocessed batches.
@@ -188,13 +190,10 @@ def model(lr=0.001, show_summary=False):
 	input_cam1 = Input(shape=(64, 80, 3), name='input_cam1')
 	input_cam2 = Input(shape=(64, 80, 3), name='input_cam2')
 	input_cam3 = Input(shape=(64, 80, 3), name='input_cam3')
-	# input_las1 = Input(shape=(50,), name='input_las1')
-	# input_las2 = Input(shape=(50,), name='input_las2')
 
 	inputs = [input_cam1, input_cam2, input_cam3]
 
 	conv_inputs = Concatenate(axis=-1)([input_cam1, input_cam2, input_cam3])
-	# ff_inputs = Concatenate(axis=-1)([input_las1, input_las2])
 
 	def conv2d(inp, filters):
 		result = Conv2D(filters, (3, 3), padding='same', activation='relu')(inp)
@@ -206,10 +205,8 @@ def model(lr=0.001, show_summary=False):
 	conv_part = conv2d(conv_part, 10)
 	conv_part = conv2d(conv_part, 8)
 
-	# ff_part = Concatenate(axis=-1)([Flatten()(conv_part), ff_inputs])
 	ff_part = Flatten()(conv_part)
 	ff_part = Dense(512, activation='relu')(ff_part)
-	ff_part = Dense(256, activation='relu')(ff_part)
 
 	outputs = []
 	target_columns = ['target1']
