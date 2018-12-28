@@ -12,7 +12,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 def train():
-	"""Train the neural network model, save the weights and shows the learning error over time."""
+	"""Train the neural network model, save the weights and show the learning error over time."""
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-n', '--name', type=str, help='name of the Model weights', default='model_' + str(datetime.now()))
 	parser.add_argument('-f', '--filename', type=str, help='name of the dataset (.h5 file)', default='data_gazebo.h5')
