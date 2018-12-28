@@ -29,7 +29,7 @@ All the video material of models trained with the proposed approach on different
 The real world dataset is available at [this link](https://drive.switch.ch/index.php/s/v6P93gv6lA77AQ4).
 It is stored as an HDF5 file containing two groups per recording called respectively *"bag{index}_x"* and *"bag{index}_y"* for a total of 11 recordings (22 groups).
 
-The simulation dataset is available at [this link](www.putlinkhere.ch).
+The simulation dataset is available at ~~[this link](www.putlinkhere.ch)~~.
 It is stored as an HDF5 file containing a main group per recording called *"bag{index}"*. Each main group is divided into subgroups *"/x"* and *"/y"* that are respectively divded into *"/input_cam1", "/input_cam2", "/input_cam3"* and *"/output_target1"*.
 
 ### Code
