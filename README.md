@@ -20,6 +20,8 @@ generality of our contribution.
 
 The e-print of the article is available at the following link [arXiv:1809.07207](https://arxiv.org/abs/1809.07207).
 
+### Bibtex
+
 ```properties  
 @article{nava2019learning,
   title={Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry},
