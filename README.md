@@ -1,4 +1,4 @@
-# Learning Long-range Perception using Self-Supervision from Short-Range Sensors and Odometry
+# Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry
 
 *Mirko Nava, Jérôme Guzzi, R. Omar Chavez-Garcia, Luca M. Gambardella and Alessandro Giusti*
 
@@ -9,8 +9,6 @@ We instantiate and implement the approach on a small mobile robot to detect obst
 We additionally instantiate the approach on a different simulated scenario with complementary characteristics, to exemplify the
 generality of our contribution.
 
-The e-print of the article is available at the following link [arXiv:1809.07207](https://arxiv.org/abs/1809.07207).
-
 ![Predictions](https://github.com/idsia-robotics/Learning-Long-range-Perception/blob/master/img/predictions.png "Predictions")
 *Prediction of a model trained with the proposed approach applied on a camera mounted on a Mighty Thymio **(a)**, on a TurtleBot **(b)** and on the belt of a person **(c)**.*
 
@@ -19,6 +17,17 @@ The e-print of the article is available at the following link [arXiv:1809.07207]
 **Left & Center-left**: robot setup with cameras' views.
 **Center-right**: number of extracted known labels from 70min of recording.
 **Right**: achieved AUC score of a model trained from 35min of recording.*
+
+The e-print of the article is available at the following link [arXiv:1809.07207](https://arxiv.org/abs/1809.07207).
+
+```properties  
+@article{nava2019learning,
+  title={Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry},
+  author={Nava, Mirko and Guzzi, Jerome and Chavez-Garcia, Omar and Gambardella, Luca and Giusti, Alessandro},
+  journal="IEEE Robotics and Automation Letters",
+  year="2019"
+}
+```
 
 ### Videos
 
