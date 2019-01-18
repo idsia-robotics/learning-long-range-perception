@@ -18,7 +18,7 @@ generality of our contribution.
 **Center-right**: number of extracted known labels from 70min of recording.
 **Right**: achieved AUC score of a model trained from 35min of recording.*
 
-The e-print of the article is available at the following link [arXiv:1809.07207](https://arxiv.org/abs/1809.07207).
+The preprint PDF of the article is available at the following link [arXiv:1809.07207](https://arxiv.org/abs/1809.07207).
 
 ### Bibtex
 
