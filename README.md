@@ -23,7 +23,7 @@ The preprint PDF of the article is available at the following link [arXiv:1809.0
 ### Bibtex
 
 ```properties  
-@article{8624299, 
+@article{nava2019learning, 
 author={M. Nava and J. Guzzi and R. O. Chavez-Garcia and L. Gambardella and A. Giusti}, 
 journal={IEEE Robotics and Automation Letters}, 
 title={Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry}, 
