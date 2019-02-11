@@ -2,7 +2,7 @@
 
 *Mirko Nava, Jérôme Guzzi, R. Omar Chavez-Garcia, Luca M. Gambardella and Alessandro Giusti*
 
-Robotics Lab, Dalle Molle Institute for Artificial Intelligence, USI-SUPSI, Lugano (Switzerland)
+Dalle Molle Institute for Artificial Intelligence, USI-SUPSI, Lugano (Switzerland)
 
 ### Abstract
 
