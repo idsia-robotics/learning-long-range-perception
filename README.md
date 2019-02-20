@@ -25,14 +25,18 @@ The preprint PDF of the article is available at the following link [arXiv:1809.0
 ### Bibtex
 
 ```properties
-@article{nava2019learning, 
-author={M. Nava and J. Guzzi and R. O. Chavez-Garcia and L. Gambardella and A. Giusti}, 
+@article{nava2019ral, 
+author={Nava, Mirko and Guzzi, Jérôme and Chavez-Garcia, R. Omar and Gambardella, Luca M. and Giusti, Alessandro}, 
 journal={IEEE Robotics and Automation Letters}, 
-title={Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry}, 
-year={2019},
-keywords={Range Sensing,Computer Vision for Other Robotic Applications,Deep Learning in Robotics and Automation}, 
+title={Learning Long-Range Perception Using Self-Supervision From Short-Range Sensors and Odometry}, 
+year={2019}, 
+volume={4}, 
+number={2}, 
+pages={1279-1286}, 
+keywords={Cameras;Robot vision systems;Task analysis;Mobile robots;Range sensing;computer vision for other robotic applications;deep learning in robotics and automation}, 
 doi={10.1109/LRA.2019.2894849}, 
-ISSN={2377-3766},
+ISSN={2377-3766}, 
+month={April},
 }
 ```
 
