@@ -42,7 +42,7 @@ month={April},
 
 ### Videos
 
-[![Learning long range perception](http://img.youtube.com/vi/JvtDGO43qew/0.jpg)](http://www.youtube.com/watch?v=JvtDGO43qew "Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry")
+[![Learning Long-Range Perception Using Self-Supervision from Short-Range Sensors and Odometry](https://github.com/idsia-robotics/Learning-Long-range-Perception/blob/master/video/self_supervised_aaai2019.gif)](https://www.youtube.com/watch?v=JvtDGO43qew)
 
 All the video material of models trained with the proposed approach on different scenarios, robots and systems is available [here](https://github.com/idsia-robotics/Learning-Long-range-Perception/tree/master/video).
 
